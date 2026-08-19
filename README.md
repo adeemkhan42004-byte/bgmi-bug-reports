@@ -1,6 +1,6 @@
 # BGMI Bug Reports — QA Testing Portfolio
 
-A collection of structured software bug reports documenting functional, UI, network, gameplay, and event-related issues identified during BGMI gameplay.
+A collection of structured bug reports documenting gameplay, UI, network, event, and functional issues observed during BGMI gameplay.
 
 ## About This Project
 
@@ -17,9 +17,8 @@ Each issue is documented using a structured QA format covering:
 * Severity and priority
 * User impact
 * Testing notes
-* Evidence
 
-The objective of this portfolio is to demonstrate the ability to identify, reproduce, document, and communicate software defects clearly.
+The objective of this portfolio is to demonstrate the ability to identify, analyze, document, and communicate potential software defects in a clear and professional format.
 
 ## Bug Reports
 
@@ -33,17 +32,31 @@ The objective of this portfolio is to demonstrate the ability to identify, repro
 
 ## Testing Areas
 
-The documented issues cover several areas of application testing:
+The reports cover several areas of software testing:
 
-* **Functional Testing** — Verifying whether game features perform their intended functions.
-* **UI Testing** — Checking whether displayed information and messages accurately represent the current application state.
-* **Gameplay Testing** — Observing core player interactions and controls during active gameplay.
-* **Network Testing** — Comparing displayed network information with observed gameplay behavior.
-* **Event Testing** — Testing event progression, item exchange, and reward-related functionality.
+### Functional Testing
+
+Testing whether game features perform their intended functions.
+
+### UI Testing
+
+Checking whether displayed messages, counters, and status information accurately represent the application's current state.
+
+### Gameplay Testing
+
+Testing player controls and interactions during active gameplay.
+
+### Network Testing
+
+Observing network-related behavior and comparing displayed network information with gameplay responsiveness.
+
+### Event Testing
+
+Testing event progression, item exchanges, and reward-related functionality.
 
 ## Bug Report Structure
 
-Each report follows a consistent structure:
+Each report follows a consistent QA documentation structure:
 
 ```text
 Bug ID
@@ -61,52 +74,48 @@ Preconditions
 Steps to Reproduce
 Expected Result
 Actual Result
-Reproducibility
 Impact
 Severity Rationale
 Priority Rationale
-Evidence
 Notes
 ```
 
 ## Severity Classification
 
-| Severity | Meaning                                                                                                                             |
-| -------- | ----------------------------------------------------------------------------------------------------------------------------------- |
-| Critical | Causes severe failure, prevents major portions of the application from functioning, or results in significant data/security impact. |
-| High     | Significantly affects core functionality or gameplay.                                                                               |
-| Major    | Prevents an important feature from working correctly or causes substantial user impact.                                             |
-| Minor    | Causes limited functional or UI impact without significantly affecting core functionality.                                          |
-| Trivial  | Cosmetic or very low-impact issue.                                                                                                  |
+| Severity | Meaning                                                                           |
+| -------- | --------------------------------------------------------------------------------- |
+| Critical | Severe failure that significantly prevents the application from functioning.      |
+| High     | Significant impact on core functionality or gameplay.                             |
+| Major    | Important feature is not functioning correctly or causes substantial user impact. |
+| Minor    | Limited functional or UI impact with relatively low user impact.                  |
+| Trivial  | Cosmetic or very low-impact issue.                                                |
 
 ## Priority Classification
 
 | Priority | Meaning                                                          |
 | -------- | ---------------------------------------------------------------- |
-| High     | Should be investigated and fixed with high urgency.              |
-| Medium   | Should be addressed, but does not require immediate attention.   |
+| High     | Should be investigated with high urgency.                        |
+| Medium   | Should be investigated after higher-priority issues.             |
 | Low      | Can be addressed when higher-priority issues have been resolved. |
 
 ## Reproducibility
 
-Some reports are marked as **Intermittent / Requires Verification** because the issue was observed during gameplay but requires additional controlled testing to establish consistent reproduction conditions.
+Some reports are marked **Intermittent / Requires Verification** because the behavior was observed during gameplay but requires additional controlled testing to establish consistent reproduction conditions.
 
-This distinction is intentional: an observation is documented separately from a fully verified defect.
+This distinction is intentional. The repository documents observed potential defects rather than presenting unverified observations as confirmed defects.
 
-## Evidence
+## Methodology
 
-Screenshots and screen recordings can be added to the repository as supporting evidence where available.
+The reports were created using a structured manual testing approach:
 
-Suggested structure:
-
-```text
-evidence/
-├── BUG-001/
-├── BUG-002/
-├── BUG-003/
-├── BUG-004/
-└── BUG-005/
-```
+1. Identify unexpected application behavior.
+2. Determine the expected behavior.
+3. Document the conditions under which the behavior was observed.
+4. Create reproducible steps based on the observation.
+5. Compare expected and actual results.
+6. Assess potential user impact.
+7. Assign severity and priority.
+8. Document areas requiring further verification.
 
 ## Disclaimer
 
@@ -118,4 +127,4 @@ BGMI and Battlegrounds Mobile India are trademarks of their respective owners. T
 
 **QA / Software Testing Portfolio**
 
-Focused on practical bug identification, reproduction, documentation, and software quality analysis.
+Focused on practical bug identification, manual testing, defect documentation, and software quality analysis.
